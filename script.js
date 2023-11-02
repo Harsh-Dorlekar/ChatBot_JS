@@ -8,7 +8,7 @@ const API_KEY = "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";
 const createChatLi = (message, className) => {
     const chatLi = document.createElement("li");
     chatLi.classList.add("chat", className);
-    let chatContent = className === "outgoing" ? `<p>${message}</p>` : `<span class="material-symbols-outlined">smart_toy</span><p>${message}</p>`;
+    let chatContent = className === "outgoing" ? `<p>${message}</p>` : `<span class="material-symbols-outlined"><img src="/Media/robot.png" width="20px" style="padding-top: 5px;"></span><p>${message}</p>`;
     chatLi.innerHTML = chatContent;
     return chatLi;
 };
